@@ -7,6 +7,7 @@ for number in numbers :
         if number % i ==0:
             is_prime = False
             break
+
     if is_prime and number != 1:
         primes.append (number)
     else :
