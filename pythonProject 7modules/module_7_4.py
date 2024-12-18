@@ -7,7 +7,7 @@ team2_time = 2153.31451
 tasks_total = 82
 time_avg = 45.2
 
-# Calculate challenge_result
+# пределяем переменные
 if score_1 > score_2 or (score_1 == score_2 and team1_time < team2_time):
     challenge_result = 'Победа команды Мастера кода!'
 elif score_1 < score_2 or (score_1 == score_2 and team1_time > team2_time):
@@ -16,7 +16,7 @@ else:
     challenge_result = 'Ничья!'
 
 
-# Using % formatting
+#  % форматирование
 string_percent_1 = "В команде Мастера кода участников: %d ! " % team1_num
 print(string_percent_1)
 
@@ -24,7 +24,7 @@ string_percent_2 = "Итого сегодня в командах участни
 print(string_percent_2)
 
 
-# Using format() formatting
+#  format() форматирование
 string_format_1 = "Команда Волшебники данных решила задач: {} !".format(score_2)
 print(string_format_1)
 
@@ -32,7 +32,7 @@ string_format_2 = " Волшебники данных решили задачи 
 print(string_format_2)
 
 
-# Using f-strings
+# форматирование с помощью ф строки
 string_f_1 = f"Команды решили {score_1} и {score_2} задач."
 print(string_f_1)
 
